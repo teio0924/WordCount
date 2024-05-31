@@ -1,0 +1,7 @@
+int countChars(FILE *file) {  
+    int charCount = 0;  
+    char ch;  
+    while ((ch = fgetc(file)) != EOF) {  
+        charCount++;  
+    }  
+    return charCount; 
